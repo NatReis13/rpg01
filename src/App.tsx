@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import * as C from "./App.styles";
 import { Character } from "./components/Character/index";
+import { Character2 } from "./components/Characte2";
 import { useCharacter } from "./hooks/userCharacter";
 
 const App = () => {
@@ -38,7 +39,7 @@ const App = () => {
     <C.Container>
       <C.Map>
         <Character x={char.x} y={char.y} side={char.side} />
-        <Character x={14} y={2} side={'down'} />
+        <Character2 x={14} y={2} side={'down'} />
       </C.Map>
     </C.Container>
   );
